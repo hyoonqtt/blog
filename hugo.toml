@@ -37,6 +37,23 @@ enableEmoji = true
   disableSpecial1stPost = false
   disableAnchoredHeadings = false
 
+  [params.profileMode]
+    enabled = true
+    title = "Hyoon"
+    subtitle = "very much below average"
+    imageUrl = "/assets/img/profile-picture.png"
+    imageTitle = "Hyoon"
+    imageWidth = 150
+    imageHeight = 150
+
+    [[params.profileMode.buttons]]
+      name = "Posts"
+      url = "/posts/"
+
+    [[params.profileMode.buttons]]
+      name = "About"
+      url = "/about/"
+
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/hyoonqt"
