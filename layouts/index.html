@@ -1,9 +1,7 @@
 {{- define "main" }}
 
-{{/* Profile header (text/components from the old blog; styling untouched). */}}
 {{- partial "index_profile.html" . }}
 
-{{/* Latest posts below the profile (entry markup mirrors the theme's list). */}}
 {{- $recent := first 3 (where site.RegularPages "Section" "posts") }}
 {{- if $recent }}
 <header class="page-header">

@@ -1,10 +1,3 @@
-# Blog — https://blog.hyoonqt.my.id
-# Hugo extended 0.167.0 + PaperMod @ d3768854d00ad003b0a8dbdba254ce9224377a01
-# Content and settings ported from ~/personal-blog (same stack, same theme).
-# Content only: posts, about page, title/description/author, social URLs.
-# Design stays ours: no profileMode, our own menu, nord override intact.
-# Do not edit themes/PaperMod directly; override via layouts/ or assets/css/extended/.
-
 baseURL = "https://blog.hyoonqt.my.id/"
 title = "Hyoon"
 locale = "en-us"
@@ -18,7 +11,7 @@ buildExpired = false
 enableEmoji = true
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"] # JSON output powers PaperMod client-side search (Fuse.js)
+  home = ["HTML", "RSS", "JSON"]
 
 [params]
   description = "Manusia Bingung"

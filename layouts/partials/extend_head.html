@@ -1,6 +1,4 @@
-<!-- Service-worker removal backup: this site ships no worker (see static/sw.js).
-     If an old one (e.g. ex-Jekyll) still controls this origin, drop it and
-     its caches on page load. Harmless when nothing is registered. -->
+
 <script>
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.getRegistrations().then(function (regs) {
