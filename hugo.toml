@@ -1,0 +1,97 @@
+# Blog — https://blog.hyoonqt.my.id
+# Hugo extended 0.167.0 + PaperMod @ d3768854d00ad003b0a8dbdba254ce9224377a01
+# Content and settings ported from ~/personal-blog (same stack, same theme).
+# Content only: posts, about page, title/description/author, social URLs.
+# Design stays ours: no profileMode, our own menu, nord override intact.
+# Do not edit themes/PaperMod directly; override via layouts/ or assets/css/extended/.
+
+baseURL = "https://blog.hyoonqt.my.id/"
+title = "Hyoon"
+locale = "en-us"
+timeZone = "Asia/Jakarta"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"] # JSON output powers PaperMod client-side search (Fuse.js)
+
+[params]
+  description = "Manusia Bingung"
+  author = "Hyoon"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowShareButtons = true
+  ShowReadingTime = true
+  ShowToc = true
+  TocOpen = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  hideFooter = false
+  disableSpecial1stPost = false
+  disableAnchoredHeadings = false
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/hyoonqt"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/zaki-h-7b47bb370/"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:zakihakim385@gmail.com"
+
+  [[params.socialIcons]]
+    name = "instagram"
+    url = "https://instagram.com/eemanon.__"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
+
+[[menu.main]]
+  identifier = "posts"
+  name = "Posts"
+  url = "/posts/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "tags"
+  name = "Tags"
+  url = "/tags/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "archives"
+  name = "Archives"
+  url = "/archives/"
+  weight = 30
+
+[[menu.main]]
+  identifier = "search"
+  name = "Search"
+  url = "/search/"
+  weight = 40
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 50
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    noClasses = false
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4

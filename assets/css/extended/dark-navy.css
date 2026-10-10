@@ -1,0 +1,47 @@
+/* Dark navy + yellow scheme, matching the main site at https://hyoonqt.my.id:
+   near-black navy bg #060d18, entries #0b1f3b, steel-blue #123a63
+   (borders/code), text white, secondary #b3c2d9, accent yellow #f6c445
+   (links, active menu, selection).
+   PaperMod hook: files in assets/css/extended/ are bundled after the theme
+   CSS, so these variable overrides win without editing themes/PaperMod.
+   Both light and dark theme slots are set to dark navy so the look stays
+   consistent with the dark-only main site. */
+
+:root {
+  --theme: #060d18;
+  --entry: #0b1f3b;
+  --primary: #ffffff;
+  --secondary: #b3c2d9;
+  --tertiary: #123a63;
+  --content: #ffffff;
+  --code-block-bg: #0b1f3b;
+  --code-bg: #123a63;
+  --border: #123a63;
+}
+
+:root[data-theme="dark"] {
+  --theme: #060d18;
+  --entry: #0b1f3b;
+  --primary: #ffffff;
+  --secondary: #b3c2d9;
+  --tertiary: #123a63;
+  --content: #ffffff;
+  --code-block-bg: #0b1f3b;
+  --code-bg: #123a63;
+  --border: #123a63;
+}
+
+::selection {
+  background: #f6c445;
+  color: #060d18;
+}
+
+/* Content links use the yellow accent. */
+.md-content a:not(.anchor) {
+  color: #f6c445;
+}
+
+/* Active menu item underline uses the yellow accent. */
+.menu .active {
+  text-decoration-color: #f6c445;
+}
