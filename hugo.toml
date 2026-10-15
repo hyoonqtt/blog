@@ -33,7 +33,7 @@ enableEmoji = true
   [params.profileMode]
     enabled = true
     title = "Hyoon"
-    subtitle = "very much below average"
+    subtitle = "Halcyon in here"
     imageUrl = "/assets/img/profile-picture.png"
     imageTitle = "Hyoon"
     imageWidth = 150
